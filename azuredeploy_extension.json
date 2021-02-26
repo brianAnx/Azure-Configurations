@@ -1,0 +1,23 @@
+{
+    "extensionProfile": {
+      "extensions": [
+        {
+          "name": "AppInstall",
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/brianAnx/Azure-Configurations/main/vsbuildinstall.ps1"
+              ],
+              "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -File ', './vsbuildinstall.ps1')]"
+            }
+          }
+        }
+      ]
+    }
+  }
+  
+  
